@@ -32,7 +32,7 @@ body {
   align-items: center;
   background-color: var(--stone-100);
   color: var(--stone-600);
-} 
+}
 
 hr {
   border: 1px solid var(--stone-150);
@@ -71,14 +71,14 @@ img {
 .time-container {
   background-color: var(--rose-50);
   border-radius: .5rem;
-  padding: 1.2rem;;
+  padding: 1.2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: .9rem;
 }
 
-.time-container h3 {
+.time-container h2 {
   color: var(--rose-800);
 }
 
@@ -164,4 +164,22 @@ img {
 
 .recipe-container tr td b {
   color: var(--brown-800);
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .time-container,
+  .presentation-container,
+  .recipe-container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  img {
+    border-radius: 0;
+  }
 }
